@@ -91,9 +91,9 @@ def create_note():
         try:
             with speech_recognition.Microphone() as mic:
                 recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-                #audio = recognizer.listen(mic)
+                audio = recognizer.listen(mic)
 
-                note = input("You: ")#recognizer.recognize_google(audio)
+                note = recognizer.recognize_google(audio)
                 note = note.lower()
 
                 print("Assitant: Choose a file name!")
@@ -101,9 +101,9 @@ def create_note():
                 speaker.runAndWait()
 
                 recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-                #audio = recognizer.listen(mic)
+                audio = recognizer.listen(mic)
 
-                filename = input("You: ")#recognizer.recognize_google(audio)
+                filename = recognizer.recognize_google(audio)
                 filename = filename.lower()
             with open(filename, 'w') as f:
                 f.write(note)
@@ -127,9 +127,9 @@ def add_todo():
         try:
             with speech_recognition.Microphone() as mic:
                 recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-                #audio = recognizer.listen(mic)
+                audio = recognizer.listen(mic)
 
-                item = input("You: ")#recognizer.recognize_google(audio)
+                item = recognizer.recognize_google(audio)
                 item = item.lower()
                 todo_list.append(item)
                 done = True
@@ -202,9 +202,9 @@ while True:
     try:
         with speech_recognition.Microphone() as mic:
             recognizer.adjust_for_ambient_noise(mic, duration=0.2)
-            #audio = recognizer.listen(mic)
+            audio = recognizer.listen(mic)
 
-            message = input("You: ")#recognizer.recognize_google(audio)
+            message = recognizer.recognize_google(audio)
             message.lower()
         request(message)
     except speech_recognition.UnknownValueError:
