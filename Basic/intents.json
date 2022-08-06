@@ -1,0 +1,14 @@
+{"intents": [
+    {"tag": "greetings",
+        "patterns": ["Hello", "hi!", "hey!", "how are you?", "greetings", "what's up?", "how is it going?"],
+        "responses": ["Hello!", "Hey!", "Hi!", "What can I do for you?"]
+    },
+    {"tag": "goodbye",
+        "patterns": ["bye", "goodbye", "cya!", "see you later!", "I am leaving.", "have a good day", "see ya!"],
+        "responses": ["Sad to see you go :(", "Goodbye!", "Talk to you later"]
+    },
+    {"tag": "name",
+        "patterns": ["what is your name?", "what should I call you?", "who are you?", "can you tell me your name."],
+        "responses": ["My name is Betty!", "You can call me Betty!", "I'm Betty"]
+    }
+]}

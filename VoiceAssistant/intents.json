@@ -1,0 +1,39 @@
+{
+    "intents": [
+    {
+        "tag": "greetings",
+        "patterns": ["Hello", "hi!", "hey!", "how are you?", "greetings", "what's up?", "how is it going?"],
+        "responses": [""]
+    },
+    {
+        "tag": "name",
+        "patterns": ["what is your name?", "what should I call you?", "who are you?", "can you tell me your name."],
+        "responses": ["My name is Betty!", "You can call me Betty!", "I'm Betty"]
+    },
+    {
+        "tag": "create_note",
+        "patterns": ["create a new note", "new note", "create a note", "I want to create a note"],
+        "responses": [""]
+    },
+    {
+        "tag": "add_todo",
+        "patterns": ["add todo", "add a new todo", "add a todo to my list", "new item in my todo list", "add new task to my todo"],
+        "responses": [""]
+    },
+    {
+        "tag": "show_todo",
+        "patterns": ["show my todo list", "what are my todos", "what is on my todo list", "what tasks do I have in my todo list"],
+        "responses": [""]
+    },
+    {
+        "tag": "open_youtube",
+        "patterns": ["Open youtube", "open you tube", "open yt", "can you open youtube for me?", "please open youtube for me"],
+        "responses": [""]
+    },
+    {
+        "tag": "exit",
+        "patterns": ["bye", "goodbye", "cya!", "see you later!", "I am leaving.", "have a good day", "see ya!"],
+        "responses": [""]
+    }
+    ]
+}
